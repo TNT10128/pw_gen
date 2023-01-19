@@ -2,7 +2,6 @@
 A command-line password generator made in Rust. Also my first Rust program. (warning: code may be horrible, or it might not be, I don't know)
 
 ![GNU GPL v3](https://img.shields.io/github/license/TNT10128/pw_gen?style=for-the-badge)
-![Codefactor code quality](https://img.shields.io/codefactor/grade/github/TNT10128/pw_gen?style=for-the-badge)
 
 ## ℹ️ Description
 pw_gen is a command line password generator written in Rust. It allows you to customize the characters to be included in your password, as well as the length and the amount of passwords to generate. Additionally, there is the option to output the generated passwords to a file.
