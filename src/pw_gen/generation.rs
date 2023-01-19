@@ -28,7 +28,7 @@ fn get_available_characters(args: &Args) -> Vec<char> {
         available.extend(NUMBERS.chars());
     }
     if args.symbols {
-        available.extend(SYMBOLS.chars())
+        available.extend(SYMBOLS.chars());
     }
     available.extend(args.custom.chars());
 
