@@ -12,7 +12,7 @@ fn get_random_element<T>(vec: &Vec<T>) -> &T {
     let chosen = vec.choose(&mut rand::thread_rng());
     match chosen {
         Some(result) => result,
-        None => panic!("Couldn't get random element from list!")
+        None => panic!("Couldn't get random element from list!"),
     }
 }
 

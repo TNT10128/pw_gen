@@ -1,7 +1,7 @@
 mod pw_gen;
 
 use clap::Parser;
-use log::{info, error};
+use log::{error, info};
 use pw_gen::{arg_parsing::Args, files::write_passwords_to_file, generation::generate_password};
 
 fn print_startup_text() {
@@ -9,14 +9,14 @@ fn print_startup_text() {
     let figure = slanted_font.convert("pwgen");
     match figure {
         Some(figure) => info!("{}", figure),
-        None => error!("Could not print startup text!")
+        None => error!("Could not print startup text!"),
     }
 }
 
 fn main() {
     match simple_logger::init() {
         Ok(_) => (),
-        Err(err) => println!("Logging error: {}", err)
+        Err(err) => println!("Logging error: {}", err),
     }
 
     print_startup_text();
